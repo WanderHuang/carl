@@ -1,0 +1,28 @@
+{
+  "name": "carl",
+  "version": "1.0.0",
+  "description": "一个基于ts和react的页面解决方案",
+  "main": "index.js",
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WanderHuang/carl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WanderHuang/carl/issues"
+  },
+  "homepage": "https://github.com/WanderHuang/carl#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-emoji"
+    }
+  }
+}
