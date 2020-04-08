@@ -24,5 +24,6 @@
     "commitizen": {
       "path": "cz-emoji"
     }
-  }
+  },
+  "dependencies": {}
 }

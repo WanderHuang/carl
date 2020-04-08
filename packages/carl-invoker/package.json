@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "carl-pack start",
+    "build": "carl-pack build",
+    "test": "carl-pack a"
   },
   "keywords": [],
   "author": "",
@@ -12,9 +14,12 @@
   "dependencies": {
     "carl-flow": "^1.0.0",
     "carl-pack": "^1.0.0",
-    "carl-router": "^1.0.0"
+    "carl-router": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@types/react-dom": "^16.9.6",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
