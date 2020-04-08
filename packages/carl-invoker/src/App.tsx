@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 const App = () => {
   return (
-    <div>success</div>
+    <div>This is a hot-reload typescript-react app</div>
   )
 }
 
