@@ -1,27 +1,25 @@
 import { CliProps } from '../types';
 import webpack from 'webpack';
-import path from 'path';
+import resolve from '../utils/resolvePath';
 import chalk from 'chalk';
 const WebpackDevServer = require('webpack-dev-server');
 const generateConfig = require('../config/webpack.config.js');
 
-
 export default (props: CliProps) => {
   const env = 'development';
-  const config = generateConfig(env);
+  const { devServer: devConfig, ...config } = generateConfig(env);
   process.env.NODE_ENV = env;
   process.env.BABEL_ENV = env;
   const compiler = webpack(config);
+
+  const { host, port, ...devCompiler } = devConfig;
+
   const devServer = new WebpackDevServer(compiler, {
-    contentBase: path.resolve(process.cwd(), 'dist'),
-    compress: true,
-    open: true,
-    stats: {
-      colors: true
-    }
+    ...devCompiler,
+    contentBase: config?.output?.path || resolve(process.cwd(), 'dist'),
   });
 
-  devServer.listen(9700, 'localhost', () => {
-    console.log(`${chalk.green(props.name, 'is on http://localhost:9700')}`)
-  })
+  devServer.listen(port, host, () => {
+    console.log(`${chalk.green(props.name, `is on http://${host}:${port}`)}`);
+  });
 };
