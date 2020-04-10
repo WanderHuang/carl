@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = (env) => {
   const isProd = env === 'production';
   return {
@@ -8,9 +9,9 @@ module.exports = (env) => {
     otherFilename: '[name]/media/[name].[hash:8].[ext]',
     cssFilename: '[name]/css/[name].[contenthash:8].css',
     cssChunkFilename: '[name]/css/[name].[contenthash:8].chunk.css',
-    resolveAlias: {
-      'src/': '@/',
-    },
+    // resolveAlias: {
+    //   '@': path.resolve(__dirname, 'src'),
+    // },
     // default dist
     outDir: 'dist',
     devServer: {

@@ -43,7 +43,7 @@ const service = (cwd: string, env: string) => {
       : '[name]/js/[name].chunk.js',
     // 模块内路径别名
     resolveAlias: {
-      'src/': '@/',
+      '@': resolve(cwd, 'src'),
     },
     // 图片路径设置
     imageFilename: '[name]/images/[name].[hash:8].[ext]',
