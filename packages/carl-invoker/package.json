@@ -16,7 +16,8 @@
     "carl-pack": "^1.0.0",
     "carl-router": "^1.0.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "rxjs": "^6.5.5"
   },
   "devDependencies": {
     "@types/react-dom": "^16.9.6",
