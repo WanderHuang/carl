@@ -1,6 +1,6 @@
 {
   "name": "carl-pack",
-  "version": "0.0.3",
+  "version": "0.0.4-alpha.0",
   "description": "A cli tool for building a typescript + react project",
   "main": "index.js",
   "scripts": {
