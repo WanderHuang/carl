@@ -33,5 +33,6 @@
     "react-router": "^5.1.2",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.1.2"
-  }
+  },
+  "homepage": "https://github.com/WanderHuang/carl/tree/master/packages/carl-router"
 }

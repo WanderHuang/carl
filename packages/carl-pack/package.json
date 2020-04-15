@@ -59,5 +59,6 @@
     "url-loader": "^4.1.0",
     "webpack": "^4.42.1",
     "webpack-dev-server": "^3.10.3"
-  }
+  },
+  "homepage": "https://github.com/WanderHuang/carl/tree/master/packages/carl-pack"
 }
