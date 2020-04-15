@@ -5,8 +5,7 @@
   "main": "build/index.js",
   "module": "build/index.es.js",
   "scripts": {
-    "build": "rollup -c",
-    "start": "rollup -c -w"
+    "build": "rollup -c"
   },
   "keywords": [
     "typescript",

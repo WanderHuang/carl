@@ -1,4 +1,4 @@
-# carl
+# carl [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
 一个基于ts和react的页面解决方案。
 
@@ -7,6 +7,14 @@
 `carl`是我第一个工程化实践项目，自己的项目会有更多的用carl来做。希望不断地完善。
 
 核心的`pack`功能有借鉴`create-react-app`，`flow`有借鉴`react-redux`。致敬。
+
+## 把玩
+
+1. `yarn global add lerna` 安装lerna
+2. `yarn` 安装依赖
+3. `lerna bootstrap` 安装
+4. `lerna run build` 构建
+5. `lerna run start` 本地跑`carl-invoker`
 
 ## 特性
 

@@ -2,5 +2,9 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.0"
+  "ignoreChanges": [
+    "**/*.md"
+  ],
+  "npmClient": "yarn",
+  "version": "0.0.1"
 }
