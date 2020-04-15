@@ -88,6 +88,7 @@ const service = (cwd: string, env: string) => {
 
   return Object.assign({}, { plugins: defaultPlugins }, defaultConfig, config, {
     devServer: {
+      ...(config && config.devServer ? config.devServer : {}),
       compress: config?.devServer?.compress || true,
       open: config?.devServer?.open || true,
       stats: config?.devServer?.stats || {
