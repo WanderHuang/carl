@@ -10,6 +10,7 @@
     "state",
     "model",
     "carl-flow",
+    "carl",
     "typescript"
   ],
   "files": [
@@ -35,5 +36,9 @@
     "rxjs": "^6.5.5",
     "typescript": "^3.8.3"
   },
-  "homepage": "https://github.com/WanderHuang/carl/tree/master/packages/carl-flow"
+  "homepage": "https://github.com/WanderHuang/carl/tree/master/packages/carl-flow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WanderHuang/carl"
+  }
 }

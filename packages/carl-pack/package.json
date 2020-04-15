@@ -12,7 +12,8 @@
   "keywords": [
     "webpack",
     "typescript",
-    "carl-pack"
+    "carl-pack",
+    "carl"
   ],
   "author": "wander",
   "license": "MIT",
@@ -60,5 +61,9 @@
     "webpack": "^4.42.1",
     "webpack-dev-server": "^3.10.3"
   },
-  "homepage": "https://github.com/WanderHuang/carl/tree/master/packages/carl-pack"
+  "homepage": "https://github.com/WanderHuang/carl/tree/master/packages/carl-pack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WanderHuang/carl"
+  }
 }
