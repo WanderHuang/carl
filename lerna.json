@@ -7,7 +7,9 @@
   ],
   "command": {
     "publish": {
-      "ignoreChanges": ["carl-invoker"]
+      "ignoreChanges": [
+        "carl-invoker"
+      ]
     }
   },
   "npmClient": "yarn",
