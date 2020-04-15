@@ -78,9 +78,9 @@ const generate = (env) => {
         chunks: 'all',
         name: false,
       },
-      runtimeChunk: {
-        name: (entry) => `runtime-${entry.name}`,
-      },
+      // runtimeChunk: {
+      //   name: (entry) => `runtime-${entry.name}`,
+      // },
     },
     resolve: {
       modules: ['node_modules'],
@@ -154,7 +154,7 @@ const generate = (env) => {
             // 模块化 本地代码
             {
               test: /\.(c|le)ss$/,
-              exclude: [/node_modules/, /\.module\.css/],
+              exclude: [/node_modules/, /\.module\.css/, /\.module\.less/],
               use: getStyleLoaders(
                 {
                   cssOptions: {
