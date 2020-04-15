@@ -1,9 +1,10 @@
 const path = require('path');
+
 module.exports = (env) => {
   const isProd = env === 'production';
   return {
     publicPath: '/',
-    filename: '[name]/js/[name].[contenthash:8].js',
+    filename: `[name]/js/[name].[${isProd ? 'contenthash': 'hash'}:8].js`,
     chunkFilename: '[name]/js/[name].[contenthash:8].chunk.js',
     imageFilename: '[name]/images/[name].[hash:8].[ext]',
     otherFilename: '[name]/media/[name].[hash:8].[ext]',
@@ -15,8 +16,17 @@ module.exports = (env) => {
     // default dist
     outDir: 'dist',
     devServer: {
-      index: 'user.html',
+      index: 'index.html',
       port: 9600,
-    }
+      hot: true,
+      historyApiFallback: {
+        rewrites: [
+          {
+            from: /.*/g,
+            to: '/'
+          }
+        ]
+      },
+    },
   }
 }

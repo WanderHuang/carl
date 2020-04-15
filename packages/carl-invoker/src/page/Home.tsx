@@ -2,39 +2,36 @@ import React from 'react';
 import { flow, Dispatch } from 'carl-flow';
 import { Observable } from 'rxjs';
 import { tap, pluck } from 'rxjs/operators';
-import { RouterDom } from 'carl-router';
-const { withRouter } = RouterDom;
 
-type AppProps = {
+type HomeProps = {
   userId: number;
   dispatch: Dispatch;
 }
 
-const App: React.FC<AppProps> = (props) => {
+const Home: React.FC<HomeProps> = (props) => {
   const { userId } = props;
 
   const onRandom = () => {
     const { dispatch } = props;
     dispatch({
-      type: 'app/updateUserId',
+      type: 'home/updateUserId',
       payload: Math.random() * 100 | 0
     })
   }
 
   return (
     <div>
-      <button onClick={onRandom}>App随机ID</button>
+      <button onClick={onRandom}>Home随机ID</button>
       <div>{userId}</div>
-      <div>{props.children}</div>
     </div>
   )
 }
 
-export default withRouter(flow(
+export default flow(
   (stream$: Observable<any>) => {
     return stream$.pipe(
-      tap(next => console.log('Tap App >', next)),
-      pluck('app')
+      tap(next => console.log('Tap Home >', next)),
+      pluck('home')
     )
   }
-)(App));
+)(Home);

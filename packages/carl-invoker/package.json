@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "carl-pack start",
-    "build": "carl-pack build",
-    "test": "carl-pack a"
+    "build": "carl-pack build"
   },
   "keywords": [],
   "author": "",
