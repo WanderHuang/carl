@@ -1,16 +1,21 @@
 {
   "name": "carl-flow",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "A state management for react developer",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "state",
+    "model",
+    "carl-flow",
+    "typescript"
+  ],
+  "author": "wander",
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",

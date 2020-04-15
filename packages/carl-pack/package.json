@@ -1,7 +1,7 @@
 {
   "name": "carl-pack",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "A cli tool for building a typescript + react project",
   "main": "index.js",
   "scripts": {
     "build": "tsc"
@@ -9,9 +9,13 @@
   "bin": {
     "carl-pack": "./bin/sh.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "webpack",
+    "typescript",
+    "carl-pack"
+  ],
+  "author": "wander",
+  "license": "MIT",
   "devDependencies": {
     "@types/fs-extra": "^8.1.0",
     "@types/node": "^13.11.0",
