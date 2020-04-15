@@ -3,7 +3,6 @@
   "version": "0.0.2",
   "description": "A router management for carl",
   "main": "build/index.js",
-  "module": "build/index.es.js",
   "scripts": {
     "build": "rollup -c"
   },
@@ -11,6 +10,9 @@
     "typescript",
     "router",
     "carl-router"
+  ],
+  "files": [
+    "build"
   ],
   "author": "wander",
   "license": "MIT",
@@ -27,7 +29,12 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
     "rollup-plugin-typescript2": "^0.27.0",
+    "rollup-plugin-uglify": "^6.0.4",
     "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "dependencies": {
     "react-router": "^5.1.2",

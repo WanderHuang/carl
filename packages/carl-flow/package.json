@@ -3,7 +3,6 @@
   "version": "0.0.2",
   "description": "A state management for react developer",
   "main": "build/index.js",
-  "module": "build/index.es.js",
   "scripts": {
     "build": "rollup -c"
   },
@@ -13,8 +12,14 @@
     "carl-flow",
     "typescript"
   ],
+  "files": [
+    "build"
+  ],
   "author": "wander",
   "license": "MIT",
+  "peerDependencies": {
+    "rxjs": "^6.5.5"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
@@ -26,10 +31,9 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
     "rollup-plugin-typescript2": "^0.27.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "rxjs": "^6.5.5",
     "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "rxjs": "^6.5.5"
   },
   "homepage": "https://github.com/WanderHuang/carl/tree/master/packages/carl-flow"
 }
