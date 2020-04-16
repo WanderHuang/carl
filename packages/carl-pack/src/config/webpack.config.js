@@ -154,7 +154,8 @@ const generate = (env) => {
             // 模块化 本地代码
             {
               test: /\.(c|le)ss$/,
-              exclude: [/node_modules/, /\.module\.css/, /\.module\.less/],
+              // .module.(c|le)ss为模块化代码
+              exclude: [/\.module\.css/, /\.module\.less/],
               use: getStyleLoaders(
                 {
                   cssOptions: {
@@ -195,6 +196,8 @@ const generate = (env) => {
                   publicPath,
                 }
               ),
+              // 第三方不打包为模块化代码
+              exclude: [/node_modules/]
             },
             // file-loader确保webpackdevserver能够给文件提供服务
             {

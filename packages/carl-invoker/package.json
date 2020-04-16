@@ -16,6 +16,7 @@
   "author": "wander",
   "license": "MIT",
   "dependencies": {
+    "antd": "^4.1.3",
     "carl-flow": "^0.0.4-alpha.0",
     "carl-pack": "^0.0.4-alpha.0",
     "carl-router": "^0.0.4-alpha.0",

@@ -6,6 +6,7 @@ import { RouterDom } from 'carl-router';
 import store from '@/models';
 import Routes from '@/routes';
 import styles from './index.module.less';
+import 'antd/dist/antd.css';
 
 console.log(styles)
 
