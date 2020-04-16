@@ -133,6 +133,9 @@ export class Store {
     });
 
     this.alive = true;
+
+    this.dispatch = this.dispatch.bind(this);
+    this.select = this.select.bind(this);
   }
 
   dispatch(action: AsyncAction) {
