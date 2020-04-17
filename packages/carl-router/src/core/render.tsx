@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, withRouter } from 'react-router-dom';
-import { wrap } from './index';
+import wrap from './wrap';
 import { renderRoutes, RouteConfig } from 'react-router-config';
 
 
