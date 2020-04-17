@@ -88,7 +88,6 @@ const service = (cwd: string, env: string) => {
 
   return Object.assign({}, { plugins: defaultPlugins }, defaultConfig, config, {
     devServer: {
-      ...(config && config.devServer ? config.devServer : {}),
       compress: config?.devServer?.compress || true,
       open: config?.devServer?.open || true,
       stats: config?.devServer?.stats || {
@@ -96,6 +95,9 @@ const service = (cwd: string, env: string) => {
       },
       port: config?.devServer?.port || 9700,
       host: config?.devServer?.host || '0.0.0.0',
+      watchContentBase: true,
+      hot: true,
+      ...(config && config.devServer ? config.devServer : {}),
     },
   });
 };

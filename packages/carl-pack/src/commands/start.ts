@@ -15,7 +15,7 @@ export default (props: CliProps) => {
   const { host, port, ...devCompiler } = devConfig;
 
   const devServer = new WebpackDevServer(compiler, {
-    contentBase: config?.output?.path || resolve(process.cwd(), 'dist'),
+    contentBase: resolve(process.cwd(), 'src'),
     ...devCompiler,
   });
 
