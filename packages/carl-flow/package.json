@@ -1,6 +1,6 @@
 {
   "name": "carl-flow",
-  "version": "0.0.4-alpha.0",
+  "version": "0.0.5-alpha.0",
   "description": "A state management for react developer",
   "main": "build/index.js",
   "scripts": {

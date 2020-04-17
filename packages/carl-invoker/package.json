@@ -1,6 +1,6 @@
 {
   "name": "carl-invoker",
-  "version": "0.0.4-alpha.0",
+  "version": "0.0.5-alpha.0",
   "description": "A carl project for building a web site",
   "main": "index.js",
   "private": true,
@@ -17,9 +17,9 @@
   "license": "MIT",
   "dependencies": {
     "antd": "^4.1.3",
-    "carl-flow": "^0.0.4-alpha.0",
-    "carl-pack": "^0.0.4-alpha.0",
-    "carl-router": "^0.0.4-alpha.0",
+    "carl-flow": "^0.0.5-alpha.0",
+    "carl-pack": "^0.0.5-alpha.0",
+    "carl-router": "^0.0.5-alpha.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "rxjs": "^6.5.5"
